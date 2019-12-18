@@ -76,7 +76,7 @@ stem(spektr/ns*2,'-o g')
 figure(3)
 hold all
 grid on
-stem(max_hold_spktr/(ns/4)*2,'-o g')
+stem(max_hold_spktr/ns*2,'-o g')
 
 %%
 
