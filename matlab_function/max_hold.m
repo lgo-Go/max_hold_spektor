@@ -61,7 +61,7 @@ end
 sig_full = sum(sig); % Суммарный сигнал
 spektr = (abs(fft(sig_full))); % Обычный спектр
 
-max_hold_spktr = (1:2000); % Max Hold спектр
+pred_max_hold_spktr = (1:2000); % Max Hold спектр
 max_hold_spktr(1) = max(abs(fft(sig_full(1:4))));
 for i = 2 : 2000
     max_hold_spktr(i) = max(abs(fft(sig_full((i-1)*4 : i*4))));
@@ -93,7 +93,7 @@ clear all; clc; close all
 % ns = length(n); % Количество отсчетов сигнала
 
 fid = fopen('File1_fd20_1_ofdm_only.pcm');
-Num_of_samples = 140000;
+Num_of_samples = 132000;
 data = fread(fid,Num_of_samples,'int16');
 fclose(fid);
 data_i = downsample(data,2);
@@ -106,10 +106,14 @@ fs = Ns;
 dt = 1/fs;
 t = n*dt;
 
-max_hold_spktr = (1:128);
-max_hold_spktr(1) = max(abs(fft(data_samples(1:546))));
+mh_box = randi([0,0], 512, 128);
+mh_box(:,1) = abs(fftshift(fft(data_samples(1:512))));
 for i = 2 : 128
-    max_hold_spktr(i) = max(abs(fft(data_samples((i-1)*546 : i*546))));
+    mh_box(:,i) = abs(fftshift(fft(data_samples((i-1)*512+1 : i*512))));
+end
+max_hold_spktr = (1 : 512)';
+for i = 1 : 512
+    max_hold_spktr(i) = (max(mh_box(i, :)));
 end
 
 figure(1)
@@ -117,15 +121,15 @@ grid on
 hold on
 plot(t, data_i)
 
-% figure(2)
-% grid on
-% hold on
-% plot(abs(fft(data_samples)))
+figure(2)
+grid on
+hold on
+plot(abs(fftshift(fft(data_samples))))
 
 figure(3)
 grid on
 hold on
-stem(max_hold_spktr/(Ns/546)*2, '-o b')
+plot((max_hold_spktr), 'b')
 
 %%
 
