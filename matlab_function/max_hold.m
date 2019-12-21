@@ -59,13 +59,23 @@ for i = 1 : 20
 end
 
 sig_full = sum(sig); % Суммарный сигнал
-spektr = (abs(fft(sig_full))); % Обычный спектр
+spektr = (abs(fftshift(fft(sig_full)))); % Обычный спектр
 
-pred_max_hold_spktr = (1:2000); % Max Hold спектр
-max_hold_spktr(1) = max(abs(fft(sig_full(1:4))));
-for i = 2 : 2000
-    max_hold_spktr(i) = max(abs(fft(sig_full((i-1)*4 : i*4))));
+mh_box = randi([0,0], 256, 31);
+mh_box(:,1) = abs(fftshift(fft(sig_full(1:256))));
+for i = 2 : 31
+    mh_box(:,i) = abs(fftshift(fft(sig_full((i-1)*256+1 : i*256))));
 end
+max_hold_spktr = (1 : 256)';
+for i = 1 : 256
+    max_hold_spktr(i) = (max(mh_box(i, :)));
+end
+
+% pred_max_hold_spktr = (1:2000); % Max Hold спектр
+% max_hold_spktr(1) = max(abs(fft(sig_full(1:4))));
+% for i = 2 : 2000
+%     max_hold_spktr(i) = max(abs(fft(sig_full((i-1)*4 : i*4))));
+% end
 
 figure(1)
 hold all
@@ -107,8 +117,7 @@ dt = 1/fs;
 t = n*dt;
 
 mh_box = randi([0,0], 512, 128);
-mh_box(:,1) = abs(fftshift(fft(data_samples(1:512))));
-for i = 2 : 128
+for i = 1 : 128
     mh_box(:,i) = abs(fftshift(fft(data_samples((i-1)*512+1 : i*512))));
 end
 max_hold_spktr = (1 : 512)';
