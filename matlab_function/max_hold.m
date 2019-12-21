@@ -61,17 +61,10 @@ end
 sig_full = sum(sig); % Суммарный сигнал
 spektr = (abs(fftshift(fft(sig_full)))); % Обычный спектр
 
-<<<<<<< HEAD
 mh_box = randi([0,0], 256, 31);
 mh_box(:,1) = abs(fftshift(fft(sig_full(1:256))));
 for i = 2 : 31
     mh_box(:,i) = abs(fftshift(fft(sig_full((i-1)*256+1 : i*256))));
-=======
-pred_max_hold_spktr = (1:2000); % Max Hold спектр
-max_hold_spktr(1) = max(abs(fft(sig_full(1:4))));
-for i = 2 : 2000
-    max_hold_spktr(i) = max(abs(fftshift(fft(sig_full((i-1)*4 : i*4)))));
->>>>>>> e9e9fff241bd2b009214bfc63bec6813775d1b92
 end
 max_hold_spktr = (1 : 256)';
 for i = 1 : 256
