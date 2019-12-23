@@ -1417,7 +1417,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_ARCH</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_ARCH">1</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_ARCH">3</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_HAS_NFFT</spirit:name>
@@ -1469,7 +1469,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_HAS_NATURAL_OUTPUT</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_HAS_NATURAL_OUTPUT">0</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_HAS_NATURAL_OUTPUT">1</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_HAS_CYCLIC_PREFIX</spirit:name>
@@ -1489,7 +1489,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_BRAM_STAGES</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_BRAM_STAGES">0</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_BRAM_STAGES">2</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_REORDER_MEM_TYPE</spirit:name>
@@ -1547,6 +1547,14 @@
       <spirit:enumeration>65536</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
+      <spirit:name>choice_list_7a91b114</spirit:name>
+      <spirit:enumeration>0</spirit:enumeration>
+      <spirit:enumeration>1</spirit:enumeration>
+      <spirit:enumeration>2</spirit:enumeration>
+      <spirit:enumeration>3</spirit:enumeration>
+      <spirit:enumeration>4</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
       <spirit:name>choice_list_c6ed4a00</spirit:name>
       <spirit:enumeration>8</spirit:enumeration>
       <spirit:enumeration>9</spirit:enumeration>
@@ -1575,10 +1583,6 @@
       <spirit:enumeration>32</spirit:enumeration>
       <spirit:enumeration>33</spirit:enumeration>
       <spirit:enumeration>34</spirit:enumeration>
-    </spirit:choice>
-    <spirit:choice>
-      <spirit:name>choice_list_d85ad257</spirit:name>
-      <spirit:enumeration>0</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
       <spirit:name>choice_pairs_2533cddb</spirit:name>
@@ -1660,7 +1664,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>target_clock_frequency</spirit:name>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.target_clock_frequency" spirit:order="4" spirit:minimum="1" spirit:maximum="1000" spirit:rangeType="long">250</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.target_clock_frequency" spirit:order="4" spirit:minimum="1" spirit:maximum="1000" spirit:rangeType="long">100</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>implementation_options</spirit:name>
@@ -1716,7 +1720,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>output_ordering</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.output_ordering" spirit:choiceRef="choice_pairs_6d049389" spirit:order="18">bit_reversed_order</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.output_ordering" spirit:choiceRef="choice_pairs_6d049389" spirit:order="18">natural_order</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>cyclic_prefix_insertion</spirit:name>
@@ -1736,7 +1740,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>number_of_stages_using_block_ram_for_data_and_phase_factors</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.number_of_stages_using_block_ram_for_data_and_phase_factors" spirit:choiceRef="choice_list_d85ad257" spirit:order="23">0</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.number_of_stages_using_block_ram_for_data_and_phase_factors" spirit:choiceRef="choice_list_7a91b114" spirit:order="23">2</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>memory_options_hybrid</spirit:name>
@@ -1788,6 +1792,17 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_DATA.TUSER_WIDTH" xilinx:valueSource="constant"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.implementation_options" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.number_of_stages_using_block_ram_for_data_and_phase_factors" xilinx:valueSource="user"/>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.output_ordering" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.target_clock_frequency" xilinx:valueSource="user"/>
+>>>>>>> danya
+>>>>>>> 208200ed79c5ddfec501ac21a476fd1749784a83
+>>>>>>> master
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.transform_length" xilinx:valueSource="user"/>
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>

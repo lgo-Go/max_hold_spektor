@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 208200ed79c5ddfec501ac21a476fd1749784a83
+=======
+>>>>>>> 208200ed79c5ddfec501ac21a476fd1749784a83
+# Start of session at: Sat Dec 21 21:13:49 2019
+# Process ID: 284
+# Current directory: C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4852 C:\Igor_G\Vivado_projects\max_hold\max_hold_spektor\VHDL_hold_spectr\Max_hold.xpr
+# Log file: C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/vivado.log
+# Journal file: C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.xpr
+update_compile_order -fileset sources_1
+file mkdir C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sources_1/new
+close [ open C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sources_1/new/ReadData.vhd w ]
+add_files C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sources_1/new/ReadData.vhd
+update_compile_order -fileset sources_1
+close [ open C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sources_1/new/WriteData.vhd w ]
+add_files C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sources_1/new/WriteData.vhd
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+# Start of session at: Fri Dec 20 17:38:42 2019
+# Process ID: 20460
+# Current directory: D:/Ïàðàøè÷ÊÓðÑà÷/max_hold_spektor/VHDL_hold_spectr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21104 D:\Ïàðàøè÷ÊÓðÑà÷\max_hold_spektor\VHDL_hold_spectr\Max_hold.xpr
+# Log file: D:/Ïàðàøè÷ÊÓðÑà÷/max_hold_spektor/VHDL_hold_spectr/vivado.log
+# Journal file: D:/Ïàðàøè÷ÊÓðÑà÷/max_hold_spektor/VHDL_hold_spectr\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Ïàðàøè÷ÊÓðÑà÷/max_hold_spektor/VHDL_hold_spectr/Max_hold.xpr
+>>>>>>> e9e9fff241bd2b009214bfc63bec6813775d1b92
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.transform_length {512} CONFIG.implementation_options {automatically_select} CONFIG.number_of_stages_using_block_ram_for_data_and_phase_factors {0}] [get_ips xfft_0]
+=======
+update_compile_order -fileset sources_1
+>>>>>>> 208200ed79c5ddfec501ac21a476fd1749784a83
+=======
+update_compile_order -fileset sources_1
+>>>>>>> 208200ed79c5ddfec501ac21a476fd1749784a83
