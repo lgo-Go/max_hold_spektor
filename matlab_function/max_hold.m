@@ -118,7 +118,7 @@ t = n*dt;
 
 mh_box = randi([0,0], 512, 128);
 for i = 1 : 128
-    mh_box(:,i) = abs(fftshift(fft(data_samples((i-1)*512+1 : i*512))));
+    mh_box(:,i) = (fft(data_samples((i-1)*512+1 : i*512)));
 end
 max_hold_spktr = (1 : 512)';
 for i = 1 : 512
@@ -138,7 +138,7 @@ plot(abs(fftshift(fft(data_samples))))
 figure(3)
 grid on
 hold on
-plot((max_hold_spktr), 'b')
+plot(fftshift(abs(max_hold_spktr)), 'b')
 
 %%
 
