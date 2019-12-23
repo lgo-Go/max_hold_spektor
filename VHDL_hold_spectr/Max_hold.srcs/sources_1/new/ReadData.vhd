@@ -5,10 +5,10 @@ library std;
 use std.textio.all;
 
 
-entity ReadData is
+entity ReadDataQ is
     generic(
         numOfBits : integer;
-        file_name : string
+        file_name : string := "D:\ѕарашич ”р—ач\max_hold_spektor\matlab_function\Data2fpgaQ"
         );
     port(
         data: out std_logic_vector ((numOfBits-1) downto 0);
@@ -17,10 +17,10 @@ entity ReadData is
         rfd : in std_logic;
         clk : in std_logic
         );
-end ReadData;
+end ReadDataQ;
 
 
-architecture Behavioral of ReadData is
+architecture Behavioral of ReadDataQ is
 
     constant log_file_rd : string := file_name;
     file file_rd: TEXT open read_mode is log_file_rd;
