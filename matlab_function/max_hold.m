@@ -142,5 +142,8 @@ plot(fftshift(abs(max_hold_spktr)), 'b')
 
 %%
 
-wr_sig_full = round(data);
-dlmwrite('data.dat',wr_sig_full);
+wr_sig_full = round(data_i);
+dlmwrite('data2fpgai.dat',wr_sig_full);
+
+wr_sig_full1 = round(data_q);
+dlmwrite('data2fpgaq.dat',wr_sig_full1);
