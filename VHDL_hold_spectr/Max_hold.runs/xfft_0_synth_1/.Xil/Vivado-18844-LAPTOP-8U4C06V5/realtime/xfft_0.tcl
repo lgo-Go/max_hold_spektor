@@ -16,7 +16,7 @@ set rt::rc [catch {
     set rt::cmdEcho 0
     rt::set_parameter writeXmsg true
     rt::set_parameter enableParallelHelperSpawn true
-    set ::env(RT_TMP) "D:/Ïàğàøè÷ÊÓğÑà÷/max_hold_spektor/VHDL_hold_spectr/Max_hold.runs/xfft_0_synth_1/.Xil/Vivado-19360-LAPTOP-8U4C06V5/realtime/tmp"
+    set ::env(RT_TMP) "D:/ÖÓÈÌÏ ÊÓĞÑÀ×/max_hold_spektor/VHDL_hold_spectr/Max_hold.runs/xfft_0_synth_1/.Xil/Vivado-18844-LAPTOP-8U4C06V5/realtime/tmp"
     if { [ info exists ::env(RT_TMP) ] } {
       file delete -force $::env(RT_TMP)
       file mkdir $::env(RT_TMP)
@@ -65,7 +65,7 @@ set rt::rc [catch {
     rt::set_parameter rstSrlDepthThreshold 4
 # MODE: 
     rt::set_parameter webTalkPath {}
-    rt::set_parameter enableSplitFlowPath "D:/Ïàğàøè÷ÊÓğÑà÷/max_hold_spektor/VHDL_hold_spectr/Max_hold.runs/xfft_0_synth_1/.Xil/Vivado-19360-LAPTOP-8U4C06V5/"
+    rt::set_parameter enableSplitFlowPath "D:/ÖÓÈÌÏ ÊÓĞÑÀ×/max_hold_spektor/VHDL_hold_spectr/Max_hold.runs/xfft_0_synth_1/.Xil/Vivado-18844-LAPTOP-8U4C06V5/"
     set ok_to_delete_rt_tmp true 
     if { [rt::get_parameter parallelDebug] } { 
        set ok_to_delete_rt_tmp false 

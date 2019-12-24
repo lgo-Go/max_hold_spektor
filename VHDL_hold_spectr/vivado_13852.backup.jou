@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Dec 24 01:42:16 2019
+# Process ID: 13852
+# Current directory: D:/ѕарашич ”р—ач/max_hold_spektor/VHDL_hold_spectr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4216 D:\ѕарашич ”р—ач\max_hold_spektor\VHDL_hold_spectr\Max_hold.xpr
+# Log file: D:/ѕарашич ”р—ач/max_hold_spektor/VHDL_hold_spectr/vivado.log
+# Journal file: D:/ѕарашич ”р—ач/max_hold_spektor/VHDL_hold_spectr\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ѕарашич ”р—ач/max_hold_spektor/VHDL_hold_spectr/Max_hold.xpr
+update_compile_order -fileset sources_1

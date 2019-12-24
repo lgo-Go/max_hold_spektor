@@ -1,7 +1,17 @@
 version:1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+6d6f64655f636f756e7465727c4755494d6f6465:6
+ffffffffffffffffff:0
+fffffffffffffffffffffffffff:0
+fffffffffffffffffffffffffff0a:0
+ffffffffffffffffffffffffffffffffffff41fffffffff0ffff14fffffffff3bfffffffff3775fffffffff:0
+=======
+<<<<<<< HEAD
+>>>>>>> 51ef7a0378ce43a26dbc26c911c3d08be529602a
 37373737:0
 3737373737fff:0
 37373737ffffffffffff41fff2b00fff14ffffff3bfff6813775d1bfff:0
@@ -20,5 +30,9 @@ version:1
 6d6f64655f636f756e7465727c4755494d6f6465:6
 >>>>>>> danya
 >>>>>>> 208200ed79c5ddfec501ac21a476fd1749784a83
+<<<<<<< HEAD
 >>>>>>> master
+=======
+>>>>>>> 41528ee5896b7aa99bf4e5c5f34d2be559dbbf36
+>>>>>>> 51ef7a0378ce43a26dbc26c911c3d08be529602a
 eof:

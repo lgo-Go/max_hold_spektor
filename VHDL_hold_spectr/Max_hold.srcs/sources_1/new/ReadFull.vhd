@@ -18,7 +18,7 @@ architecture Behavioral of ReadFull is
 component ReadDataI is 
 generic( 
 numOfBits : integer:=16;
-file_name : string := "D:\Ïàğàøè÷ÊÓğÑà÷\max_hold_spektor\matlab_function\Data2fpgaI"); 
+file_name : string := "D:\ÖÓÈÌÏ ÊÓĞÑÀ×\max_hold_spektor\matlab_function\Data2fpgaI.dat"); 
 port( 
 data : out std_logic_vector ((numOfBits-1) downto 0); 
 dv: out std_logic; 
@@ -30,7 +30,7 @@ end component;
 --component ReadFile2 is 
 --generic( 
 --numOfBits : integer:=16;
---file_name : string := "C:\Users\art_c\Documents\VIvadaProjects\kurs1\data2fpgaI2.dat"); 
+--file_name : string := 
 --port( 
 --data : out std_logic_vector ((numOfBits-1) downto 0); 
 --dv: out std_logic; 
@@ -43,7 +43,7 @@ end component;
 component ReadDataQ is 
 generic( 
 numOfBits : integer:=16;
-file_name : string := "D:\Ïàğàøè÷ÊÓğÑà÷\max_hold_spektor\matlab_function\Data2fpgaI"); 
+file_name : string := "D:\ÖÓÈÌÏ ÊÓĞÑÀ×\max_hold_spektor\matlab_function\Data2fpgaI.dat"); 
 port( 
 data : out std_logic_vector ((numOfBits-1) downto 0); 
 dv: out std_logic; 
@@ -55,7 +55,7 @@ end component;
 --component ReadFIle_Q2 is 
 --generic( 
 --numOfBits : integer:=16;
---file_name : string := "C:\Users\art_c\Documents\VIvadaProjects\kurs1\data2fpgaQ2.dat"); 
+--file_name : string := 
 --port( 
 --data : out std_logic_vector ((numOfBits-1) downto 0); 
 --dv: out std_logic; 
