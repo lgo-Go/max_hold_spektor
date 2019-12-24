@@ -4,6 +4,14 @@
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 208200ed79c5ddfec501ac21a476fd1749784a83
+=======
+>>>>>>> 208200ed79c5ddfec501ac21a476fd1749784a83
+>>>>>>> 41528ee5896b7aa99bf4e5c5f34d2be559dbbf36
 # Start of session at: Sat Dec 21 21:13:49 2019
 # Process ID: 284
 # Current directory: C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr
@@ -13,6 +21,11 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.xpr
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 41528ee5896b7aa99bf4e5c5f34d2be559dbbf36
 =======
 # Start of session at: Fri Dec 20 17:38:42 2019
 # Process ID: 20460
@@ -24,6 +37,13 @@ open_project C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spect
 start_gui
 open_project D:/ѕарашич ”р—ач/max_hold_spektor/VHDL_hold_spectr/Max_hold.xpr
 >>>>>>> e9e9fff241bd2b009214bfc63bec6813775d1b92
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 208200ed79c5ddfec501ac21a476fd1749784a83
+=======
+>>>>>>> 208200ed79c5ddfec501ac21a476fd1749784a83
+>>>>>>> 41528ee5896b7aa99bf4e5c5f34d2be559dbbf36
 INFO: [Project 1-313] Project file moved from 'D:/max_hold_spektor/VHDL_hold_spectr' since last save.
 =======
 # Start of session at: Mon Dec 23 15:34:53 2019
@@ -43,6 +63,14 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 208200ed79c5ddfec501ac21a476fd1749784a83
+=======
+>>>>>>> 208200ed79c5ddfec501ac21a476fd1749784a83
+>>>>>>> 41528ee5896b7aa99bf4e5c5f34d2be559dbbf36
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
 open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 874.742 ; gain = 147.703
 =======
@@ -115,6 +143,23 @@ add_files -fileset sim_1 D:/ѕарашич ”р—ач/max_hold_spektor/VHDL_hold_spectr/Max_
 update_compile_order -fileset sim_1
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
+<<<<<<< HEAD
 exit
 INFO: [Common 17-206] Exiting Vivado at Tue Dec 24 01:01:09 2019...
 >>>>>>> danya
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 770.637 ; gain = 138.320
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.transform_length {512} CONFIG.implementation_options {automatically_select} CONFIG.number_of_stages_using_block_ram_for_data_and_phase_factors {0}] [get_ips xfft_0]
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 20 17:59:49 2019...
+>>>>>>> e9e9fff241bd2b009214bfc63bec6813775d1b92
+=======
+>>>>>>> 208200ed79c5ddfec501ac21a476fd1749784a83
+=======
+>>>>>>> 208200ed79c5ddfec501ac21a476fd1749784a83
+>>>>>>> 41528ee5896b7aa99bf4e5c5f34d2be559dbbf36
