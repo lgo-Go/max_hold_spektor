@@ -1,38 +1,18 @@
 version:1
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-6d6f64655f636f756e7465727c4755494d6f6465:6
-ffffffffffffffffff:0
-fffffffffffffffffffffffffff:0
-fffffffffffffffffffffffffff0a:0
-ffffffffffffffffffffffffffffffffffff41fffffffff0ffff14fffffffff3bfffffffff3775fffffffff:0
-=======
-<<<<<<< HEAD
->>>>>>> 51ef7a0378ce43a26dbc26c911c3d08be529602a
 37373737:0
-3737373737fff:0
-37373737ffffffffffff41fff2b00fff14ffffff3bfff6813775d1bfff:0
-6d6f64655f636f756e7465727c4755494d6f6465:5
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> master
-6d6f64655f636f756e7465727c4755494d6f6465:4
-=======
-6d6f64655f636f756e7465727c4755494d6f6465:3
->>>>>>> e9e9fff241bd2b009214bfc63bec6813775d1b92
-<<<<<<< HEAD
-=======
-=======
-6d6f64655f636f756e7465727c4755494d6f6465:6
->>>>>>> danya
->>>>>>> 208200ed79c5ddfec501ac21a476fd1749784a83
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> 41528ee5896b7aa99bf4e5c5f34d2be559dbbf36
->>>>>>> 51ef7a0378ce43a26dbc26c911c3d08be529602a
+3737373737fff0f:0
+37373737ffffffffffffffffff41fffffffff0ffff14fffffffff3bfffffffff3775fffffffff:0
+6d6f64655f636f756e7465727c4755494d6f6465:7
+79797979:0
+7979797920fff00fff79ffffffffffff01fff21fff76fff1749784afff:0
+797979794152fffffffff6b7affffffffffffffffff4d2bfff59ffffff36:0
+7979797951fff7a0378fff43fff6dfff26fff11ffffffffffff29602a:0
+7979797979790e:0
+7979797979fff:0
+79797979ffffff0a:0
+79797979ffffffffffff41fff2b00fff14ffffff3bfff6813775d1bfff:0
+fffffffffffffffffffffffffff:0
+fffffffffffffffffffffffffffffffffffffff0f:0
+ffffffffffffffffffffffffffffffffffffffffff0a:0
+ffffffffffffffffffffffffffffffffffffffffffffffffffffff41fffffffffffffffffffff14ffffffffffffffffffffffffffffff3775ffffffffffff0f:0
 eof:
