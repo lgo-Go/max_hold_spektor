@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/ПарашичКУрСач/max_hold_spektor/VHDL_hold_spectr/Max_hold.runs/xfft_0_synth_1'
+HD_PWD='D:/ЦУИМП КУРСАЧ/max_hold_spektor/VHDL_hold_spectr/Max_hold.runs/xfft_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

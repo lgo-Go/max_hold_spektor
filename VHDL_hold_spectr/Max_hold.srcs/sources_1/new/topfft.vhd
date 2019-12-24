@@ -9,7 +9,7 @@ dv: in std_logic;
 s_axis_data_tvalid :in std_logic:='0'; 
 s_axis_data_tready : out std_logic:='0'; 
 options: in std_logic_vector(3 downto 0);
-shifter: in std_logic_vector(11 downto 0);
+shifter: in std_logic_vector(8 downto 0);
 tvalid: in std_logic:='1'; 
 data_out: out std_logic_vector(31 downto 0); 
 conditions: out std_logic_vector(15 downto 0)); 
@@ -48,18 +48,18 @@ PORT (
     event_data_out_channel_halt : OUT STD_LOGIC
   );
 end component; 
-
 begin 
-process(clk) begin 
-if rising_edge(clk) then 
-    if cntr = "111111111" then
-    cntr<="111111111"; 
-      buffer_in <= (others => '0');
-      else cntr <= unsigned(cntr) + 1;
+--begin 
+--process(clk) begin 
+--if rising_edge(clk) then 
+--    if cntr = "111111111" then
+--    cntr<="111111111"; 
+--      buffer_in <= (others => '0');
+--      else cntr <= unsigned(cntr) + 1;
 buffer_in<=data_in;
-end if;
-end if;
-end process;
+--end if;
+--end if;
+--end process;
 
 fft:xfft_0
 port map(  
@@ -68,7 +68,7 @@ port map(
       s_axis_config_tvalid=>'0',
     s_axis_config_tready=>open,
       s_axis_data_tdata=>buffer_in,
-      s_axis_data_tvalid=>'1',
+      s_axis_data_tvalid=>options(1),
     s_axis_data_tready =>s_axis_data_tready,
       s_axis_data_tlast=>options(2),
       m_axis_data_tdata=>buffer_out,
@@ -104,9 +104,9 @@ port map(
 --    event_data_out_channel_halt=>cond(9)
 --);
 
-srav: for i in 0 to 511 generate
-sam: sravnenie
-port map(ish(i)<= buffer_out,хз блять как сравнить тут эту хуету
+--srav: for i in 0 to 511 generate
+--sam: sravnenie
+--port map(ish(i)<= buffer_out,хз блять как сравнить тут эту хуету
 
 
 
