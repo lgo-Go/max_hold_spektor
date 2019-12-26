@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Max_hold.srcs/sources_1/ip/xfft_0/sim/xfft_0.vhd" \
+"../../../../Max_hold.srcs/sources_1/new/ReadData.vhd" \
+"../../../../Max_hold.srcs/sources_1/new/ReadFull.vhd" \
+"../../../../Max_hold.srcs/sources_1/new/WriteData.vhd" \
+"../../../../Max_hold.srcs/sources_1/new/readfileI.vhd" \
+"../../../../Max_hold.srcs/sources_1/new/topfft.vhd" \
+"../../../../Max_hold.srcs/sim_1/new/test.vhd" \
+
+# Do not sort compile order
+nosort

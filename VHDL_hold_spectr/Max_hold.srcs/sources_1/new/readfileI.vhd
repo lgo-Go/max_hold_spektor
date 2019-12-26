@@ -7,8 +7,8 @@ use std.textio.all;
 
 entity ReadDataI is
     generic(
-        numOfBits : integer;
-        file_name : string := "D:\ѕарашич ”р—ач\max_hold_spektor\matlab_function\Data2fpgaI"
+        numOfBits : integer := 16;
+        file_name : string := "C:\Igor_G\Vivado_projects\max_hold\max_hold_spektor\matlab_function\data2fpgai.dat"
         );
     port(
         data: out std_logic_vector ((numOfBits-1) downto 0);
