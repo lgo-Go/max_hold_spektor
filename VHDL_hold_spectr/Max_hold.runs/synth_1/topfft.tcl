@@ -29,9 +29,15 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo c:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_vhdl -library xil_defaultlib C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sources_1/new/topfft.vhd
-read_ip -quiet c:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sources_1/ip/xfft_0/xfft_0.xci
+read_vhdl -library xil_defaultlib {
+  C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sources_1/new/complex_abs.vhd
+  C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sources_1/new/topfft.vhd
+}
+read_ip -quiet C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sources_1/ip/xfft_0/xfft_0.xci
 set_property used_in_implementation false [get_files -all c:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sources_1/ip/xfft_0/xfft_0_ooc.xdc]
+
+read_ip -quiet c:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci
+set_property used_in_implementation false [get_files -all c:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

@@ -73,7 +73,8 @@ set rc [catch {
   set_property ip_output_repo C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   add_files -quiet C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.runs/synth_1/topfft.dcp
-  read_ip -quiet c:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sources_1/ip/xfft_0/xfft_0.xci
+  read_ip -quiet C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sources_1/ip/xfft_0/xfft_0.xci
+  read_ip -quiet c:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci
   link_design -top topfft -part xa7a35tcpg236-1I
   close_msg_db -file init_design.pb
 } RESULT]

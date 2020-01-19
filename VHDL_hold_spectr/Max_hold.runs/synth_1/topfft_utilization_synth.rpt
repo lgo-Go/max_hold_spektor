@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Thu Dec 26 22:20:35 2019
-| Host         : DESKTOP-7K6I3EP running 64-bit major release  (build 9200)
+| Date         : Sun Jan 19 19:03:36 2020
+| Host         : DESKTOP running 64-bit major release  (build 9200)
 | Command      : report_utilization -file topfft_utilization_synth.rpt -pb topfft_utilization_synth.pb
 | Design       : topfft
 | Device       : xa7a35tcpg236-1I
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |    0 |     0 |     20800 |  0.00 |
-|   LUT as Logic          |    0 |     0 |     20800 |  0.00 |
+| Slice LUTs*             |  146 |     0 |     20800 |  0.70 |
+|   LUT as Logic          |  146 |     0 |     20800 |  0.70 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
-| Slice Registers         |    0 |     0 |     41600 |  0.00 |
-|   Register as Flip Flop |    0 |     0 |     41600 |  0.00 |
+| Slice Registers         |  130 |     0 |     41600 |  0.31 |
+|   Register as Flip Flop |  130 |     0 |     41600 |  0.31 |
 |   Register as Latch     |    0 |     0 |     41600 |  0.00 |
 | F7 Muxes                |    0 |     0 |     16300 |  0.00 |
 | F8 Muxes                |    0 |     0 |      8150 |  0.00 |
@@ -57,7 +57,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 0     |          Yes |       Reset |            - |
+| 130   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   75 |     0 |       106 | 70.75 |
+| Bonded IOB                  |   58 |     0 |       106 | 54.72 |
 | Bonded IPADs                |    0 |     0 |        10 |  0.00 |
 | Bonded OPADs                |    0 |     0 |         4 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         5 |  0.00 |
@@ -115,7 +115,7 @@ Table of Contents
 +------------+------+-------+-----------+-------+
 |  Site Type | Used | Fixed | Available | Util% |
 +------------+------+-------+-----------+-------+
-| BUFGCTRL   |    0 |     0 |        32 |  0.00 |
+| BUFGCTRL   |    1 |     0 |        32 |  3.13 |
 | BUFIO      |    0 |     0 |        20 |  0.00 |
 | MMCME2_ADV |    0 |     0 |         5 |  0.00 |
 | PLLE2_ADV  |    0 |     0 |         5 |  0.00 |
@@ -149,19 +149,29 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| OBUF     |   42 |                  IO |
+| FDRE     |  130 |        Flop & Latch |
+| LUT1     |   63 |                 LUT |
+| LUT3     |   50 |                 LUT |
+| LUT4     |   42 |                 LUT |
 | IBUF     |   33 |                  IO |
+| OBUF     |   25 |                  IO |
+| LUT6     |   20 |                 LUT |
+| CARRY4   |   20 |          CarryLogic |
+| LUT5     |    9 |                 LUT |
+| LUT2     |    8 |                 LUT |
+| BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 
 
 8. Black Boxes
 --------------
 
-+----------+------+
-| Ref Name | Used |
-+----------+------+
-| xfft_0   |    1 |
-+----------+------+
++----------------+------+
+|    Ref Name    | Used |
++----------------+------+
+| xfft_0         |    1 |
+| dist_mem_gen_0 |    1 |
++----------------+------+
 
 
 9. Instantiated Netlists

@@ -5,6 +5,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity ReadFull is
     Port (
         data: out std_logic_vector (31 downto 0);
+        data_i: out std_logic_vector (15 downto 0);
         dv: out std_logic;
         rst : in std_logic;
         rfd : in std_logic;
@@ -60,5 +61,6 @@ begin
         data => input(1));
 
     data <= input(1) & input(0);
+    data_i <= input(0);
 
 end Behavioral;
