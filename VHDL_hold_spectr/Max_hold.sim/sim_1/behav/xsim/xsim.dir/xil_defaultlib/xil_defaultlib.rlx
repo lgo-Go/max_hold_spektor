@@ -2,13 +2,13 @@
 2018.2
 Jun 14 2018
 20:41:02
-C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
-C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sim_1/new/test.vhd,1579350228,vhdl,,,,tb,,,,,,,,
-C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,1579351406,verilog,,,,dist_mem_gen_0,,,,,,,,
+C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.sim/sim_1/behav/xsim/glbl.v,1579468457,verilog,,,,glbl,,,,,,,,
+C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sim_1/new/test.vhd,1579468457,vhdl,,,,tb,,,,,,,,
+C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,1579468457,verilog,,,,dist_mem_gen_0,,,,,,,,
 C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sources_1/ip/xfft_0/sim/xfft_0.vhd,1577398536,vhdl,,,,xfft_0,,,,,,,,
 C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sources_1/new/ReadData.vhd,1577398537,vhdl,,,,readdataq,,,,,,,,
-C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sources_1/new/ReadFull.vhd,1577441686,vhdl,,,,readfull,,,,,,,,
+C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sources_1/new/ReadFull.vhd,1579468457,vhdl,,,,readfull,,,,,,,,
 C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sources_1/new/WriteData.vhd,1576969905,vhdl,,,,writedata,,,,,,,,
-C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sources_1/new/complex_abs.vhd,1579349416,vhdl,,,,complex_abs,,,,,,,,
+C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sources_1/new/complex_abs.vhd,1579468457,vhdl,,,,complex_abs,,,,,,,,
 C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sources_1/new/readfileI.vhd,1577398537,vhdl,,,,readdatai,,,,,,,,
-C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sources_1/new/topfft.vhd,1579456390,vhdl,,,,topfft,,,,,,,,
+C:/Igor_G/Vivado_projects/max_hold/max_hold_spektor/VHDL_hold_spectr/Max_hold.srcs/sources_1/new/topfft.vhd,1579552205,vhdl,,,,topfft,,,,,,,,

@@ -142,7 +142,7 @@ grid on
 hold on
 plot(fftshift(abs(max_hold_spktr)), 'b')
 
-%%
+%% Запись в файл для fpga
 
 wr_sig_full = round(data_i);
 dlmwrite('data2fpgai.dat',wr_sig_full);
@@ -150,7 +150,7 @@ dlmwrite('data2fpgai.dat',wr_sig_full);
 wr_sig_full1 = round(data_q);
 dlmwrite('data2fpgaq.dat',wr_sig_full1);
 
-%%
+%% построение спектра первых 512 отсчётов (проверка работы ядра БПФ)
 
 data_re = dlmread('spktrfromfpgai.dat');
 data_im = dlmread('spktrfromfpgaq.dat');
@@ -161,3 +161,22 @@ grid on
 hold on
 plot(abs(fftshift(data_samples_fpga)))
 
+%% построение спектра первых 512 отсчётов (БПФ и модуль берутся в fpga)
+
+data = dlmread('maxholdfromfpga.dat');
+data_samples_fpga = data(2166 : 2678);
+
+figure(5)
+grid on
+hold on
+plot(fftshift(data_samples_fpga))
+
+%% построение Max-Hold спектра
+
+data = dlmread('maxholdfromfpga.dat');
+data_samples_fpga = data(67187 : 67699);
+
+figure(5)
+grid on
+hold on
+plot(fftshift(data_samples_fpga))

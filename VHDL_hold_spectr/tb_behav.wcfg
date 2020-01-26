@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="51126000000fs"></ZoomStartTime>
-      <ZoomEndTime time="51154800001fs"></ZoomEndTime>
-      <Cursor1Time time="51150000000fs"></Cursor1Time>
+      <ZoomStartTime time="654823430194fs"></ZoomStartTime>
+      <ZoomEndTime time="654985465744fs"></ZoomEndTime>
+      <Cursor1Time time="654890000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="167"></NameColumnWidth>
-      <ValueColumnWidth column_width="112"></ValueColumnWidth>
+      <ValueColumnWidth column_width="92"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="24" />
+   <WVObjectSize size="28" />
    <wvobject fp_name="/tb/tbclk" type="logic">
       <obj_property name="ElementShortName">tbclk</obj_property>
       <obj_property name="ObjectShortName">tbclk</obj_property>
@@ -31,6 +31,7 @@
    <wvobject fp_name="/tb/tbout" type="array">
       <obj_property name="ElementShortName">tbout[14:0]</obj_property>
       <obj_property name="ObjectShortName">tbout[14:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/tbrst" type="logic">
       <obj_property name="ElementShortName">tbrst</obj_property>
@@ -96,10 +97,6 @@
       <obj_property name="ElementShortName">tb_data_i[15:0]</obj_property>
       <obj_property name="ObjectShortName">tb_data_i[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/core/abs_otchet" type="array">
-      <obj_property name="ElementShortName">abs_otchet[14:0]</obj_property>
-      <obj_property name="ObjectShortName">abs_otchet[14:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/tb/core/memory/a" type="array">
       <obj_property name="ElementShortName">a[8:0]</obj_property>
       <obj_property name="ObjectShortName">a[8:0]</obj_property>
@@ -108,13 +105,40 @@
    <wvobject fp_name="/tb/core/memory/dpra" type="array">
       <obj_property name="ElementShortName">dpra[8:0]</obj_property>
       <obj_property name="ObjectShortName">dpra[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/core/cntr" type="array">
       <obj_property name="ElementShortName">cntr[8:0]</obj_property>
       <obj_property name="ObjectShortName">cntr[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/core/abs_otchet" type="array">
+      <obj_property name="ElementShortName">abs_otchet[14:0]</obj_property>
+      <obj_property name="ObjectShortName">abs_otchet[14:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/core/memory_d" type="array">
       <obj_property name="ElementShortName">memory_d[14:0]</obj_property>
       <obj_property name="ObjectShortName">memory_d[14:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/core/memory_dpo" type="array">
+      <obj_property name="ElementShortName">memory_dpo[14:0]</obj_property>
+      <obj_property name="ObjectShortName">memory_dpo[14:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/core/buf_re" type="array">
+      <obj_property name="ElementShortName">buf_re[15:0]</obj_property>
+      <obj_property name="ObjectShortName">buf_re[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/core/buf_im" type="array">
+      <obj_property name="ElementShortName">buf_im[15:0]</obj_property>
+      <obj_property name="ObjectShortName">buf_im[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/core/buffer_out" type="array">
+      <obj_property name="ElementShortName">buffer_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer_out[31:0]</obj_property>
    </wvobject>
 </wave_config>
